@@ -36,7 +36,7 @@ y,Y_k = new_filter(a, b, input_signal)
 sf.write('Sound_Noise(nfil)_.wav', y.real, fs)
 
 
-plt.title("Output from Butterworth filter(time)")    # Time domain plots
+plt.title("Output from inbuilt filter(time)")    # Time domain plots
 plt.grid()
 plt.plot(output_signal,'y')
 plt.savefig("../figs/ee18btech11030.eps")
@@ -47,7 +47,7 @@ plt.plot(y,'k')
 plt.savefig("../figs/ee18btech11030_1.eps")
 plt.show()
 
-plt.title("Output from Butterworth filter(freq)")    # Freq domain plots
+plt.title("Output from inbuilt filter(freq)")    # Freq domain plots
 plt.grid()
 plt.plot(np.abs(np.fft.fftshift(output_signal_freq)), 'y')
 plt.savefig("../figs/ee18btech11030_2.eps")
